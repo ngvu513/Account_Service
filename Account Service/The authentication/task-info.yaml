@@ -367,6 +367,160 @@ files:
       };
     }
   learner_created: false
+- name: src/account/controllers/Service.java
+  visible: true
+  text: |
+    package account.controllers;
+
+    public class Service {
+    }
+  learner_created: true
+- name: src/account/model/User.java
+  visible: true
+  text: |
+    package account.model;
+
+    import com.fasterxml.jackson.annotation.JsonIgnore;
+    import com.fasterxml.jackson.annotation.JsonProperty;
+    import lombok.AllArgsConstructor;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
+
+    import javax.persistence.*;
+    import javax.validation.constraints.NotBlank;
+    import javax.validation.constraints.NotNull;
+    import javax.validation.constraints.Pattern;
+
+    @Entity
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public class User {
+
+    //    @Id
+    //    @JsonIgnore
+    //    @GeneratedValue(strategy = GenerationType.AUTO)
+    //    private Long id;
+
+        @Id
+        @Column
+        @NotNull
+        @NotBlank
+        String name;
+
+        @Column
+        @NotNull
+        @NotBlank
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+        String password;
+
+        @Column
+        @NotNull
+        @NotBlank
+        String lastname;
+
+        @Column
+        @NotNull
+        @NotBlank
+        @Pattern(regexp = ".+@acme.com")
+        String email;
+    }
+  learner_created: true
+- name: src/account/controllers/AuthController.java
+  visible: true
+  text: |
+    package account.controllers;
+
+    import account.model.User;
+    import account.services.UserService;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.web.bind.annotation.PostMapping;
+    import org.springframework.web.bind.annotation.RequestBody;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+
+    import javax.servlet.http.HttpServletRequest;
+    import javax.validation.Valid;
+    import java.time.LocalDate;
+    import java.util.LinkedHashMap;
+    import java.util.Map;
+
+    @RestController
+    @RequestMapping("auth")
+    public class AuthController {
+
+        @Autowired
+        UserService userService;
+
+        @PostMapping("signup")
+        public ResponseEntity<Object> signup(@Valid @RequestBody User user) {
+    //        if (userService.findUserByName(user.getName()).isPresent()
+    //         && userService.findUserByLastname(user.getLastname()).isPresent()) {
+    //            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    //        }
+            return new ResponseEntity<>(userService.save(user), HttpStatus.OK);
+        }
+    }
+  learner_created: true
+- name: src/account/repositories/UserRepository.java
+  visible: true
+  text: |
+    package account.repositories;
+
+    import account.model.User;
+    import org.springframework.data.repository.CrudRepository;
+    import org.springframework.stereotype.Repository;
+
+    import java.util.Optional;
+
+    @Repository
+    public interface UserRepository extends CrudRepository<User, Long> {
+        Optional<User> findUserByName(String name);
+
+        Optional<User> findUserByLastname(String lastname);
+    }
+  learner_created: true
+- name: src/account/services/UserService.java
+  visible: true
+  text: |
+    package account.services;
+
+    import account.model.User;
+    import account.repositories.UserRepository;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+
+    import java.util.Optional;
+
+    @Service
+    public class UserService {
+
+        @Autowired
+        UserRepository userRepository;
+
+        public User save(User user) {
+            return userRepository.save(user);
+        }
+
+        public Optional<User> findUserByName(String name) {
+            return userRepository.findUserByName(name);
+        }
+
+        public Optional<User> findUserByLastname(String lastname) {
+            return userRepository.findUserByLastname(lastname);
+        }
+    }
+  learner_created: true
+- name: src/account/controllers/Business.java
+  visible: true
+  text: |
+    package account.controllers;
+
+    public class Business {
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/217/stages/1087/implement#comment
 status: Unchecked
 record: -1
