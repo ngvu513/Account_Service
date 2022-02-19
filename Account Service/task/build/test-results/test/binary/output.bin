@@ -1,0 +1,74 @@
+[1;31m
+Start test 1[0m
+
+(  .   ____          _            __ _ _
+) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+*( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
++ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+*  '  |____| .__|_| |_|_| |_\__, | / / / /
+) =========|_|==============|___/=/_/_/_/
++ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+ê2022-02-18 20:44:25.041  INFO 91880 --- [    Test worker] account.AccountServiceApplication        : Starting AccountServiceApplication on Ngocs-MacBook-Pro.local with PID 91880 (started by ngocvunguyen in /Users/ngocvunguyen/eclipse/Account Service/Account Service/task)
+¶2022-02-18 20:44:25.044  INFO 91880 --- [    Test worker] account.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+¢2022-02-18 20:44:25.949  INFO 91880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+∫2022-02-18 20:44:26.000  INFO 91880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+ì2022-02-18 20:44:26.595  INFO 91880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-02-18 20:44:26.608  INFO 91880 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2022-02-18 20:44:26.609  INFO 91880 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+ò2022-02-18 20:44:26.738  INFO 91880 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+•2022-02-18 20:44:26.738  INFO 91880 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1658 ms
+Ä2022-02-18 20:44:26.879  INFO 91880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2022-02-18 20:44:27.084  INFO 91880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+≥2022-02-18 20:44:27.092  INFO 91880 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/account'
+ú2022-02-18 20:44:27.225  INFO 91880 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2022-02-18 20:44:27.273  INFO 91880 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ù2022-02-18 20:44:27.311  WARN 91880 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ò2022-02-18 20:44:27.349  INFO 91880 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+û2022-02-18 20:44:27.580  INFO 91880 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ü2022-02-18 20:44:27.744  INFO 91880 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+.Hibernate: drop table if exists user CASCADE 
+´Hibernate: create table user (name varchar(255) not null, email varchar(255) not null, lastname varchar(255) not null, password varchar(255) not null, primary key (name))
+Ÿ2022-02-18 20:44:28.502  INFO 91880 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2022-02-18 20:44:28.510  INFO 91880 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+õ2022-02-18 20:44:28.577  INFO 91880 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+¶2022-02-18 20:44:28.624  INFO 91880 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path '/api'
+ß2022-02-18 20:44:28.625  INFO 91880 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2022-02-18 20:44:28.808  INFO 91880 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+∞2022-02-18 20:44:28.820  INFO 91880 --- [    Test worker] account.AccountServiceApplication        : Started AccountServiceApplication in 4.318 seconds (JVM running for 5.179)
+ü2022-02-18 20:44:29.189  INFO 91880 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2022-02-18 20:44:29.189  INFO 91880 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2022-02-18 20:44:29.199  INFO 91880 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+¥Hibernate: select user0_.name as name1_0_0_, user0_.email as email2_0_0_, user0_.lastname as lastname3_0_0_, user0_.password as password4_0_0_ from user user0_ where user0_.name=?
+RHibernate: insert into user (email, lastname, password, name) values (?, ?, ?, ?)
+[1;31m
+Start test 2[0m
+ô2022-02-18 20:44:29.411  WARN 91880 --- [io-28852-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'name': rejected value []; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+[1;31m
+Start test 3[0m
+Ï2022-02-18 20:44:29.434  WARN 91880 --- [io-28852-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'name': rejected value [null]; codes [NotNull.user.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'user' on field 'name': rejected value [null]; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+[1;31m
+Start test 4[0m
+±2022-02-18 20:44:29.441  WARN 91880 --- [io-28852-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'lastname': rejected value []; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
+[1;31m
+Start test 5[0m
+ú2022-02-18 20:44:29.448  WARN 91880 --- [io-28852-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotNull.user.lastname,NotNull.lastname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be null]] [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
+[1;31m
+Start test 6[0m
+∂2022-02-18 20:44:29.458  WARN 91880 --- [io-28852-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'email': rejected value []; codes [NotBlank.user.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be blank]] [Field error in object 'user' on field 'email': rejected value []; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4aaae633,.+@.+\..+]; default message [must match ".+@.+\..+"]] ]
+[1;31m
+Start test 7[0m
+ú2022-02-18 20:44:29.466  WARN 91880 --- [io-28852-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotNull.user.lastname,NotNull.lastname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be null]] [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
+[1;31m
+Start test 8[0m
+±2022-02-18 20:44:29.475  WARN 91880 --- [io-28852-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'password': rejected value []; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+[1;31m
+Start test 9[0m
+ú2022-02-18 20:44:29.484  WARN 91880 --- [io-28852-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'password': rejected value [null]; codes [NotNull.user.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be null]] [Field error in object 'user' on field 'password': rejected value [null]; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+[1;31m
+Start test 10[0m
+Ô2022-02-18 20:44:29.492  WARN 91880 --- [o-28852-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<account.model.User> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'email': rejected value [johndoeacme.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4aaae633,.+@.+\..+]; default message [must match ".+@.+\..+"]] ]
+[1;31m
+Start test 11[0m
+¥Hibernate: select user0_.name as name1_0_0_, user0_.email as email2_0_0_, user0_.lastname as lastname3_0_0_, user0_.password as password4_0_0_ from user user0_ where user0_.name=?
+HHibernate: update user set email=?, lastname=?, password=? where name=?
