@@ -42,6 +42,6 @@ public class User {
     @Column
     @NotNull
     @NotBlank
-    @Pattern(regexp = ".+@.+\\..+")
+    @Pattern(regexp = ".+@acme.com")
     String email;
 }

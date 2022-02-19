@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.time.LocalDate;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("auth")
@@ -20,7 +24,11 @@ public class AuthController {
     UserService userService;
 
     @PostMapping("signup")
-    public ResponseEntity<User> signup(@Valid @RequestBody User user) {
+    public ResponseEntity<Object> signup(@Valid @RequestBody User user) {
+//        if (userService.findUserByName(user.getName()).isPresent()
+//         && userService.findUserByLastname(user.getLastname()).isPresent()) {
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//        }
         return new ResponseEntity<>(userService.save(user), HttpStatus.OK);
     }
 }
