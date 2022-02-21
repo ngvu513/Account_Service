@@ -17,11 +17,7 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public Optional<User> findUserByName(String name) {
-        return userRepository.findUserByName(name);
-    }
-
-    public Optional<User> findUserByLastname(String lastname) {
-        return userRepository.findUserByLastname(lastname);
+    public Optional<User> findUserByEmail(String email) {
+        return userRepository.findUserByEmailIgnoreCase(email);
     }
 }

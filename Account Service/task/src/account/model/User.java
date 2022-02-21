@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.swing.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -17,12 +18,14 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 public class User {
 
-//    @Id
-//    @JsonIgnore
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private Long id;
-
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column
+    @JsonIgnore
+    private String role;
+
     @Column
     @NotNull
     @NotBlank
