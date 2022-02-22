@@ -1,6 +1,6 @@
 package account.controllers;
 
-import account.model.User;
+import account.models.User;
 import account.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
