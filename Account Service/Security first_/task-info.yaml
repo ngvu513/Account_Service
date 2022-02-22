@@ -879,6 +879,21 @@ files:
 
     }
   learner_created: true
+- name: src/account/exception/BreachedPasswordException.java
+  visible: true
+  learner_created: true
+- name: src/account/models/NewPassword.java
+  visible: true
+  learner_created: true
+- name: src/account/exception/SamePasswordException.java
+  visible: true
+  learner_created: true
+- name: src/account/exception/MinPasswordException.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/217/stages/1088/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 22 Feb 2022 21:15:31 UTC
 record: -1

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AccountServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-22T04:15:40" hostname="Ngocs-MBP" time="7.831">
+<testsuite name="AccountServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-22T21:15:19" hostname="Ngocs-MBP" time="11.819">
   <properties/>
-  <testcase name="start" classname="AccountServiceTest" time="7.831"/>
+  <testcase name="start" classname="AccountServiceTest" time="11.819"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 
@@ -13,131 +13,214 @@ Start test 1?[0m
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.1.RELEASE)
 
-2022-02-21 23:15:41.116  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : Starting AccountServiceApplication on Ngocs-MBP with PID 12429 (started by ngocvunguyen in /Users/ngocvunguyen/eclipse/Account_Service/Account Service/task)
-2022-02-21 23:15:41.119  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : No active profile set, falling back to default profiles: default
-2022-02-21 23:15:41.999  INFO 12429 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-02-21 23:15:42.076  INFO 12429 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 1 JPA repository interfaces.
-2022-02-21 23:15:42.610  INFO 12429 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
-2022-02-21 23:15:42.620  INFO 12429 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-21 23:15:42.621  INFO 12429 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2022-02-21 23:15:42.720  INFO 12429 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-21 23:15:42.720  INFO 12429 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1562 ms
-2022-02-21 23:15:42.835  INFO 12429 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-02-21 23:15:42.983  INFO 12429 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-02-21 23:15:42.989  INFO 12429 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
-2022-02-21 23:15:43.109  INFO 12429 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-21 23:15:43.142  INFO 12429 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-21 23:15:43.166  WARN 12429 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-21 23:15:43.191  INFO 12429 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
-2022-02-21 23:15:43.335  INFO 12429 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-02-21 23:15:43.443  INFO 12429 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-02-21 23:15:43.587  INFO 12429 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-02-21 23:15:43.629  INFO 12429 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27cfafe9, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f5a05be, org.springframework.security.web.header.HeaderWriterFilter@5a5cbdc1, org.springframework.security.web.authentication.logout.LogoutFilter@4292bbfc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6da4a2e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@347fa764, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1802bfb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76586430, org.springframework.security.web.session.SessionManagementFilter@16c18a58, org.springframework.security.web.access.ExceptionTranslationFilter@6424fe26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@327f4375]
-Hibernate: create table user (id bigint not null, email varchar(255) not null, lastname varchar(255) not null, name varchar(255) not null, password varchar(255) not null, role varchar(255), primary key (id))
+2022-02-22 16:15:20.246  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : Starting AccountServiceApplication on Ngocs-MBP with PID 14090 (started by ngocvunguyen in /Users/ngocvunguyen/eclipse/Account_Service/Account Service/task)
+2022-02-22 16:15:20.250  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2022-02-22 16:15:21.118  INFO 14090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-22 16:15:21.183  INFO 14090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 1 JPA repository interfaces.
+2022-02-22 16:15:21.730  INFO 14090 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-02-22 16:15:21.741  INFO 14090 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-22 16:15:21.741  INFO 14090 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-22 16:15:21.846  INFO 14090 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-22 16:15:21.847  INFO 14090 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+2022-02-22 16:15:21.984  INFO 14090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-22 16:15:22.166  INFO 14090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-22 16:15:22.174  INFO 14090 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
+2022-02-22 16:15:22.327  INFO 14090 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-22 16:15:22.368  INFO 14090 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-22 16:15:22.410  WARN 14090 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-22 16:15:22.430  INFO 14090 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2022-02-22 16:15:22.598  INFO 14090 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-22 16:15:22.732  INFO 14090 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-22 16:15:22.913  INFO 14090 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-02-22 16:15:22.962  INFO 14090 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@150d2561, org.springframework.security.web.context.SecurityContextPersistenceFilter@68a0808a, org.springframework.security.web.header.HeaderWriterFilter@fd46854, org.springframework.security.web.authentication.logout.LogoutFilter@73d6a6cc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c3abb03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36095ef2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d1bea9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c4c3ccb, org.springframework.security.web.session.SessionManagementFilter@7dd02d00, org.springframework.security.web.access.ExceptionTranslationFilter@236a4623, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@794f3b90]
+Hibernate: create table user (id bigint not null, email varchar(255) not null, lastname varchar(255) not null, name varchar(255) not null, new_password varchar(255), password varchar(255) not null, role varchar(255), primary key (id))
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
-2022-02-21 23:15:44.082  INFO 12429 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-21 23:15:44.088  INFO 12429 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-21 23:15:44.191  INFO 12429 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
-2022-02-21 23:15:44.192  INFO 12429 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2022-02-21 23:15:44.447  INFO 12429 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2022-02-21 23:15:44.458  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : Started AccountServiceApplication in 3.651 seconds (JVM running for 4.498)
-2022-02-21 23:15:44.812  INFO 12429 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-21 23:15:44.812  INFO 12429 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-02-21 23:15:44.820  INFO 12429 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: call next value for hibernate_sequence
-Hibernate: insert into user (email, lastname, name, password, role, id) values (?, ?, ?, ?, ?, ?)
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:23.487  INFO 14090 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-22 16:15:23.494  INFO 14090 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-22 16:15:23.609  INFO 14090 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+2022-02-22 16:15:23.610  INFO 14090 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-02-22 16:15:23.927  INFO 14090 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-02-22 16:15:23.940  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : Started AccountServiceApplication in 4.014 seconds (JVM running for 4.746)
+2022-02-22 16:15:24.332  INFO 14090 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-22 16:15:24.332  INFO 14090 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-22 16:15:24.344  INFO 14090 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-02-22 16:15:24.558  WARN 14090 --- [io-28852-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User): [Field error in object 'user' on field 'name': rejected value []; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 2?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.642  WARN 14090 --- [io-28852-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User) with 2 errors: [Field error in object 'user' on field 'name': rejected value [null]; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'user' on field 'name': rejected value [null]; codes [NotNull.user.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be null]] ]
 ?[1;31m
 Start test 3?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.657  WARN 14090 --- [io-28852-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User): [Field error in object 'user' on field 'lastname': rejected value []; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 4?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.668  WARN 14090 --- [io-28852-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User) with 2 errors: [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotNull.user.lastname,NotNull.lastname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be null]] [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 5?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: call next value for hibernate_sequence
-Hibernate: insert into user (email, lastname, name, password, role, id) values (?, ?, ?, ?, ?, ?)
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.682  WARN 14090 --- [io-28852-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User) with 2 errors: [Field error in object 'user' on field 'email': rejected value []; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@55677701,.+@acme.com]; default message [must match ".+@acme.com"]] [Field error in object 'user' on field 'email': rejected value []; codes [NotBlank.user.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 6?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.696  WARN 14090 --- [io-28852-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User) with 2 errors: [Field error in object 'user' on field 'email': rejected value [null]; codes [NotNull.user.email,NotNull.email,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be null]] [Field error in object 'user' on field 'email': rejected value [null]; codes [NotBlank.user.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 7?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+2022-02-22 16:15:24.707  WARN 14090 --- [io-28852-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User): [Field error in object 'user' on field 'password': rejected value []; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 8?[0m
-2022-02-21 23:15:45.901  WARN 12429 --- [o-28852-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'name': rejected value []; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2022-02-22 16:15:24.717  WARN 14090 --- [io-28852-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User) with 2 errors: [Field error in object 'user' on field 'password': rejected value [null]; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] [Field error in object 'user' on field 'password': rejected value [null]; codes [NotNull.user.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be null]] ]
 ?[1;31m
 Start test 9?[0m
-2022-02-21 23:15:45.909  WARN 12429 --- [io-28852-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'name': rejected value [null]; codes [NotNull.user.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'user' on field 'name': rejected value [null]; codes [NotBlank.user.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2022-02-22 16:15:24.728  WARN 14090 --- [io-28852-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User): [Field error in object 'user' on field 'email': rejected value [johndoeacme.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@55677701,.+@acme.com]; default message [must match ".+@acme.com"]] ]
 ?[1;31m
 Start test 10?[0m
-2022-02-21 23:15:45.917  WARN 12429 --- [io-28852-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'lastname': rejected value []; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
+2022-02-22 16:15:24.738  WARN 14090 --- [o-28852-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.models.User): [Field error in object 'user' on field 'email': rejected value [johndoe@google.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@55677701,.+@acme.com]; default message [must match ".+@acme.com"]] ]
 ?[1;31m
 Start test 11?[0m
-2022-02-21 23:15:45.925  WARN 12429 --- [io-28852-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotNull.user.lastname,NotNull.lastname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be null]] [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] ]
 ?[1;31m
 Start test 12?[0m
-2022-02-21 23:15:45.934  WARN 12429 --- [io-28852-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'email': rejected value []; codes [NotBlank.user.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email]]; default message [must not be blank]] [Field error in object 'user' on field 'email': rejected value []; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5c26e21,.+@acme.com]; default message [must match ".+@acme.com"]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into user (email, lastname, name, new_password, password, role, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 13?[0m
-2022-02-21 23:15:45.942  WARN 12429 --- [io-28852-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotBlank.user.lastname,NotBlank.lastname,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be blank]] [Field error in object 'user' on field 'lastname': rejected value [null]; codes [NotNull.user.lastname,NotNull.lastname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.lastname,lastname]; arguments []; default message [lastname]]; default message [must not be null]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 14?[0m
-2022-02-21 23:15:45.951  WARN 12429 --- [io-28852-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'password': rejected value []; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 15?[0m
-2022-02-21 23:15:45.959  WARN 12429 --- [io-28852-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User) with 2 errors: [Field error in object 'user' on field 'password': rejected value [null]; codes [NotNull.user.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be null]] [Field error in object 'user' on field 'password': rejected value [null]; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 16?[0m
-2022-02-21 23:15:45.967  WARN 12429 --- [io-28852-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'email': rejected value [johndoeacme.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5c26e21,.+@acme.com]; default message [must match ".+@acme.com"]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into user (email, lastname, name, new_password, password, role, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 17?[0m
-2022-02-21 23:15:45.974  WARN 12429 --- [io-28852-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> account.controllers.AuthController.signup(account.model.User): [Field error in object 'user' on field 'email': rejected value [johndoe@google.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5c26e21,.+@acme.com]; default message [must match ".+@acme.com"]] ]
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 18?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 19?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 20?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 21?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 22?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 23?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 24?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 25?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 26?[0m
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ?[1;31m
 Start test 27?[0m
 ?[1;31m
 Start test 28?[0m
-2022-02-21 23:15:47.275  INFO 12429 --- [     Thread-336] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-02-21 23:15:47.276  INFO 12429 --- [     Thread-336] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-02-21 23:15:47.277  INFO 12429 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-02-21 23:15:47.463  INFO 12429 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+?[1;31m
+Start test 29?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 30?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 31?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 32?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 33?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 34?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 35?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 36?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 37?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 38?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 39?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 40?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 41?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 42?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 43?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 44?[0m
+2022-02-22 16:15:29.650  INFO 14090 --- [     Thread-336] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-22 16:15:29.651  INFO 14090 --- [     Thread-336] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-22 16:15:29.652  INFO 14090 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-22 16:15:29.859  INFO 14090 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -147,37 +230,61 @@ Start test 28?[0m
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.1.RELEASE)
 
-2022-02-21 23:15:47.498  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : Starting AccountServiceApplication on Ngocs-MBP with PID 12429 (started by ngocvunguyen in /Users/ngocvunguyen/eclipse/Account_Service/Account Service/task)
-2022-02-21 23:15:47.499  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : No active profile set, falling back to default profiles: default
-2022-02-21 23:15:47.722  INFO 12429 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-02-21 23:15:47.728  INFO 12429 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
-2022-02-21 23:15:47.796  INFO 12429 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
-2022-02-21 23:15:47.797  INFO 12429 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-21 23:15:47.797  INFO 12429 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2022-02-21 23:15:47.815  INFO 12429 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-21 23:15:47.815  INFO 12429 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 314 ms
-2022-02-21 23:15:47.849  INFO 12429 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-02-21 23:15:47.854  INFO 12429 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2022-02-21 23:15:47.855  INFO 12429 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
-2022-02-21 23:15:47.893  INFO 12429 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-21 23:15:47.896  INFO 12429 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-21 23:15:47.900  INFO 12429 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-02-21 23:15:47.913  WARN 12429 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-21 23:15:47.943  INFO 12429 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-21 23:15:47.943  INFO 12429 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-21 23:15:48.027  INFO 12429 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-02-21 23:15:48.038  INFO 12429 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d707fdd, org.springframework.security.web.context.SecurityContextPersistenceFilter@14ced095, org.springframework.security.web.header.HeaderWriterFilter@521b4664, org.springframework.security.web.authentication.logout.LogoutFilter@17738cde, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@71b5d4f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4df57aa2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45553d1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18e5bcd8, org.springframework.security.web.session.SessionManagementFilter@20220397, org.springframework.security.web.access.ExceptionTranslationFilter@5631ea64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a569fa4]
-2022-02-21 23:15:48.093  INFO 12429 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
-2022-02-21 23:15:48.093  INFO 12429 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2022-02-21 23:15:48.114  INFO 12429 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2022-02-21 23:15:48.118  INFO 12429 --- [    Test worker] account.AccountServiceApplication        : Started AccountServiceApplication in 0.641 seconds (JVM running for 8.159)
+2022-02-22 16:15:29.987  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : Starting AccountServiceApplication on Ngocs-MBP with PID 14090 (started by ngocvunguyen in /Users/ngocvunguyen/eclipse/Account_Service/Account Service/task)
+2022-02-22 16:15:29.988  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : No active profile set, falling back to default profiles: default
+2022-02-22 16:15:30.208  INFO 14090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-22 16:15:30.215  INFO 14090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+2022-02-22 16:15:30.282  INFO 14090 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-02-22 16:15:30.283  INFO 14090 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-22 16:15:30.283  INFO 14090 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-22 16:15:30.302  INFO 14090 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-22 16:15:30.303  INFO 14090 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 313 ms
+2022-02-22 16:15:30.338  INFO 14090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-02-22 16:15:30.342  INFO 14090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-02-22 16:15:30.342  INFO 14090 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
+2022-02-22 16:15:30.380  INFO 14090 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-22 16:15:30.384  INFO 14090 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-22 16:15:30.389  INFO 14090 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-22 16:15:30.405  WARN 14090 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-22 16:15:30.437  INFO 14090 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-22 16:15:30.437  INFO 14090 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-22 16:15:30.522  INFO 14090 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-02-22 16:15:30.531  INFO 14090 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73f85741, org.springframework.security.web.context.SecurityContextPersistenceFilter@188a8408, org.springframework.security.web.header.HeaderWriterFilter@7e568184, org.springframework.security.web.authentication.logout.LogoutFilter@1e1b0ae1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5005def, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fe08c09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@557064d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@519144b6, org.springframework.security.web.session.SessionManagementFilter@525aaa16, org.springframework.security.web.access.ExceptionTranslationFilter@555a56f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41b52962]
+2022-02-22 16:15:30.586  INFO 14090 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+2022-02-22 16:15:30.587  INFO 14090 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-02-22 16:15:30.608  INFO 14090 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-02-22 16:15:30.615  INFO 14090 --- [    Test worker] account.AccountServiceApplication        : Started AccountServiceApplication in 0.649 seconds (JVM running for 11.42)
 ?[1;31m
-Start test 29?[0m
-2022-02-21 23:15:48.123  INFO 12429 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-21 23:15:48.123  INFO 12429 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-02-21 23:15:48.126  INFO 12429 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
-Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.password as password5_0_, user0_.role as role6_0_ from user user0_ where user0_.email=?
+Start test 45?[0m
+2022-02-22 16:15:30.620  INFO 14090 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-22 16:15:30.620  INFO 14090 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-22 16:15:30.623  INFO 14090 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 46?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: update user set email=?, lastname=?, name=?, new_password=?, password=?, role=? where id=?
+?[1;31m
+Start test 47?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 48?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 49?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: update user set email=?, lastname=?, name=?, new_password=?, password=?, role=? where id=?
+?[1;31m
+Start test 50?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+?[1;31m
+Start test 51?[0m
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
+Hibernate: select user0_.id as id1_0_, user0_.email as email2_0_, user0_.lastname as lastname3_0_, user0_.name as name4_0_, user0_.new_password as new_pass5_0_, user0_.password as password6_0_, user0_.role as role7_0_ from user user0_ where user0_.email=?
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

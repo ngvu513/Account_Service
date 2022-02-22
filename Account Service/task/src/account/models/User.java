@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -35,6 +36,10 @@ public class User {
     @NotBlank
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     String password;
+
+    @Column
+    @JsonIgnore
+    String new_password;
 
     @Column
     @NotNull
