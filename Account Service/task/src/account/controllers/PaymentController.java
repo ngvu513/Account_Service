@@ -17,11 +17,15 @@ public class PaymentController {
     @Autowired
     UserService userService;
 
-    @GetMapping("empl/payment")
+    @GetMapping("api/empl/payment")
     public ResponseEntity<User> getEmployPayroll(@AuthenticationPrincipal UserDetails details) {
-        Optional<User> user = userService.findUserByEmail(details.getUsername());
-        return user.map(value -> new ResponseEntity<>(value, HttpStatus.ACCEPTED))
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.UNAUTHORIZED));
+        if (details != null) {
+            Optional<User> user = userService.findUserByEmail(details.getUsername());
+            if (user.isPresent()) {
+                return new ResponseEntity<>(user.get(), HttpStatus.OK);
+            }
+        }
+        return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
     }
 
 }

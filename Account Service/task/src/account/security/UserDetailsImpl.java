@@ -17,7 +17,7 @@ public class UserDetailsImpl implements UserDetails {
         this.username = user.getEmail().toLowerCase();
         this.password = user.getPassword();
         this.rolesAndAuthorities =
-                List.of(new SimpleGrantedAuthority(user.getRole()));
+                List.of(new SimpleGrantedAuthority("USER"));
     }
 
 
